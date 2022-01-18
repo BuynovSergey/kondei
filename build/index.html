@@ -1,0 +1,63 @@
+
+<html lang="ru"> 
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="owl.carousel.css">
+		<link rel="stylesheet" href="owl.theme.default.css">
+		<script src="js/jquery-1.10.2.js"> </script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script>
+			 $(document).ready(function(){
+	var owl = $('#slider');
+	owl.owlCarousel({
+		items:1,
+		margin:0,
+		loop:true,navText: ['', ''],
+		dots:true,
+		nav:true,
+		autoplay:false,
+		autoplayTimeout:3000,
+		autoplayHoverPause:true,
+	});	
+});
+		</script>
+		<title>Заголовок title</title>
+	</head>
+	<body> 
+		<div class="main"> 
+			<p>
+				привет
+				sad
+			</p>
+			<p>sdfsdf</p>
+			<div class="main2 new banned"></div>
+		</div>
+		<div class="content"> 
+			<svg class="icon icon-like">
+				<use xlink:href="images/sprite/sprite.svg#like"></use>
+			</svg>
+		</div>
+		<footer> </footer>
+		<div id="topcontrol" title="К началу страницы"></div>
+		<script src="js/wow.min.js"> </script>
+		<script src="js/jquery.fancybox.min.js"> </script>
+		<script>
+			 wow = new WOW(
+    {
+      boxClass:     'wow',
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log('WOW: animating <' + box.tagName.toLowerCase() + '>')
+      }
+    }
+  );
+  wow.init();
+		</script>
+	</body>
+</html>
