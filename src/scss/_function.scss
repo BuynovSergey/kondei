@@ -1,0 +1,6 @@
+@function vw($value, $base:1500){
+    @return $value / $base * 100vw;
+}
+@function wpr($value, $base:1500){
+    @return 80% * 1580px / 100%;
+}

@@ -1,0 +1,205 @@
+/* CSS Document */
+/*@font-face {
+	font-family: 'Oswald-Light';
+	src: url('../fonts/Oswald-Light');
+	src: local(Oswald-Light), local(Oswald-Light),
+		url('../fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Oswald-Light.woff') format('woff'),
+		url('../fonts/Oswald-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+ul#cssmenu {
+        width:100%; margin:0 auto; box-sizing:border-box;
+        border: 0 none; padding: 0; font-family: 'Oswald-Light', Arial, sans-serif;
+        list-style: none; z-index:6; display: flex; justify-content: space-between; align-items: center;
+}
+ul#cssmenu > li {
+        margin: 0;
+        border: 0 none;
+        padding: 0;
+        float: left;
+        display: inline;
+        list-style: none; height:50px;
+}
+ul#cssmenu ul {
+        margin: 0;
+        border: 0 none;
+        padding:0;
+        list-style: none;
+        font-size: 1.2vw;
+}
+ul#cssmenu a {
+        padding: 14px 20px 13px 20px;
+        display: block;
+        height: auto !important;
+        height: 1%;-webkit-transition:all ease-out 0.25s;transition:all ease-out 0.25s;-moz-transition:all ease-out 0.25s;
+}
+ul#cssmenu > li > a { color:#fff; white-space: nowrap;}
+
+.b-menu__m1 { display: none; flex-direction: column; min-width: 20%; position: absolute; left:0; top: 50px;  background: #FFF; border-right:#acacac solid 1px !important; border-bottom:#acacac solid 1px !important; }
+.b-menu__m1 > li { width: 100%; padding:0 16px 0 50px;}
+.b-menu__m1 > li:first-child { padding: 20px 16px 0 50px;}
+.b-menu__m1 > li:last-child { padding: 0 16px 20px 50px;}
+.b-menu__m1 > li > a {text-transform:none; color:#000; padding: 14px 0 13px 0 !important; position: relative;}
+/*.b-menu__m1 li > li:hover .b-menu__m2 li:hover a { color: #006dde;}
+
+/*ul#cssmenu ul a { text-transform:none; color:#000}*/
+/*ul#cssmenu .str a {padding: 14px 30px 14px 20px;}*/
+/* Main Menu Hover */
+/*ul#cssmenu a:hover,
+ul#cssmenu li:hover a,
+ul#cssmenu li.iehover a {
+	background:#075689; color: #fff
+}*/
+.menu-dev:before { content:''; display: block; width: 83%; margin: 40px 0; height: 1px; background: #acacac;}
+/* Second Menu .b-menu__m1 li.str:hover,*/
+.b-menu__m1 li:hover > a {
+        color: #2075a1;
+}
+.b-menu__m1-full {
+	width:100%; border-right:none !important;
+}
+.b-menu__m1-full > li { width: 20%; border-right:#acacac solid 1px}
+.b-menu__m1 > li.str:hover > a:after {
+	content: ''; display: block; width: 23px; height: 23px; background: #fff; border-left:#acacac  solid 1px; border-top:#acacac  solid 1px; transform: rotate(-44deg); position: absolute; right: -28px; top: 14px; /*clip-path: polygon(100% 0,100% 100%, 100% 100%, 0 50%);*/
+}
+/* Second Menu Hover */
+/*ul#cssmenu li:hover li a:hover,
+ul#cssmenu li.iehover li a:hover {color:#2075a1}*/
+
+.b-menu__m2 {  width: 80%; padding:20px 16px 0 80px !important; font-family: 'Oswald-Medium', Arial, sans-serif; justify-content: space-between;
+        display: none;
+        position: absolute;
+        left: 20%; top: 0; background: #fff;
+}
+.b-menu__m2 > li { font-size: 1.46667vw; }
+.b-menu__m2 > li > a { text-transform:none; color: #006dde; padding: 10px 0 !important;}
+
+.b-menu__m3 { display: block; font-family: 'Oswald-Light', Arial, sans-serif;}
+.b-menu__m3 > li > a { text-transform:none; color: #006dde; padding: 10px 0 !important;}
+
+.b-menu__m4 { display: block;}
+.b-menu__m4 > li > a { display: block; text-transform:none; color: #000; padding: 0 !important;}
+
+/*ul#cssmenu li:hover ul ul,
+ul#cssmenu li.iehover ul ul {
+        display: none;
+}*/
+ul#cssmenu > li:hover > ul, .b-menu__m1 > li:hover > ul { display: flex;}
+/*ul#cssmenu li:hover ul,
+ul#cssmenu ul li:hover ul,
+ul#cssmenu li.iehover ul,
+ul#cssmenu ul li.iehover ul {
+        display: flex;
+} */
+ul#cssmenu .act-menu a {background:#006dde; color:#fff}
+ul#cssmenu .act-menu ul a { color:#bababa}
+ul#cssmenu .act-menu ul .act-menu a { color:#fff}
+/*.str-act a:after, .str a:after { content:''; display:block; width:10px; height:6px; background:url(../images/str-menu.png) no-repeat 0px -6px; position:absolute; top:46%; right:8px}
+.str a:after {background:url(../images/str-menu.png) no-repeat 0px 0px;}
+ul#cssmenu .str:hover a:after { background:url(../images/str-menu.png) no-repeat 0px -6px;}*/
+.str-act ul a:after, .str ul a:after { display:none}
+.but-submenu { display:none; cursor:pointer; width: 50px; height: 55px; background: url(../images/plus.svg) no-repeat 15px center; background-size: 20px; position: absolute;top: 0;   right: 0;}
+.active-submenu > .but-submenu {background: url(../images/minus.svg) no-repeat 15px center;background-size: 20px}
+@media only screen and (max-width: 1622px){
+	ul#cssmenu a { padding: 14px 4px 13px 4px;}
+}
+@media only screen and (max-width: 1466px){
+	ul#cssmenu a { padding: 15px 4px 14px 4px;}
+	.b-menu_ico > a { padding: 15px 20px 14px 0 !important;}
+	.b-menu__m1 > li > a { padding: 10px 0 !important;}
+}
+@media only screen and (max-width: 1360px){
+	.b-menu__m1 > li:first-child { padding: 20px 16px 0 30px;}
+	.b-menu__m1 > li { padding: 0 16px 0 30px;}
+}
+@media only screen and (max-width: 1302px){
+	ul#cssmenu a { padding: 16px 4px 15px 4px;}
+	.b-menu_ico > a { padding: 16px 20px 15px 0 !important;}
+}
+@media only screen and (max-width: 1220px){
+	ul#cssmenu > li { height: 44px;}
+	ul#cssmenu a { padding: 13px 4px 12px 4px;}
+	.b-menu_ico > a { padding: 13px 20px 12px 0 !important;}
+	.b-menu__m1 { top: 44px;}
+	.b-menu__m1 > li.str:hover > a:after { top: 10px;}
+	.b-menu__m2 { padding: 16px 16px 0 40px !important;}
+}
+@media only screen and (max-width: 1170px){
+	ul#cssmenu a { padding:15px 4px 14px 4px}
+	.b-menu_ico > a { padding: 15px 20px 14px 0 !important;}
+}
+@media only screen and (max-width: 1023px){
+	.str-act a:after, .str a:after { display:none}
+	ul#cssmenu a {position: initial; padding: 15px 0;}
+	.menu { display:block}
+ul#cssmenu { height:auto; flex-direction: column; justify-content: center;}
+ul#cssmenu li {width: 100%; float: none; display:block; height: auto; position:relative}
+ul#cssmenu ul { width:100%; position:relative; top:0; background:#dad8d8; padding:0; font-size: 16px;}
+ul#cssmenu ul li {width: 100%; float: none; display:block; padding:0}
+ul#cssmenu > li { border-bottom: 1px solid #c3c3c3;}
+.b-menu_ico > a { justify-content: center; padding: 15px 0 !important;}
+.b-menu_ico > a:before { display: none;}
+ul#cssmenu > li:last-child {border-bottom: none;}
+
+ul#cssmenu > a:hover,
+ul#cssmenu > li:hover a,
+ul#cssmenu > li.iehover a {background: #2f87b5;}
+
+.b-menu__m1 { border-right: none !important; border-bottom: none !important;}
+.b-menu__m1 > li.str:hover > a:after { display: none;}
+.b-menu__m1-full > li { width: auto; border-right:none}
+.b-menu__m1 .but-submenu { height: 44px;}
+.b-menu__m2 { left: 0; padding: 0 !important; background: #edeaea !important; font-family: 'Oswald-Light', Arial, sans-serif}
+.b-menu__m2 > li { font-size: 16px;}
+.menu-dev:before { display: none;}
+.b-menu__m3, .b-menu__m4 { display: none; background: #fff !important}
+ul#cssmenu li:hover li a,
+ul#cssmenu li.iehover li a {background: none; padding:6px 0 }
+
+ul#cssmenu li:hover ul,
+ul#cssmenu ul li:hover ul,
+ul#cssmenu li.iehover ul,
+ul#cssmenu ul li.iehover ul {display: none}
+.but-submenu { display:block}
+}
+/*ul#cssmenu li {width: 100%; float: none; display:block;height: auto; position:relative}
+ul#cssmenu ul { width:100%; position:relative; top:0; background:#dad8d8; padding:0}
+ul#cssmenu ul li {width: 100%; float: none; display:block; padding:0}
+ul#cssmenu a { border-bottom: 1px solid #c3c3c3; background: #eaeaea; color:#6d6d6d}
+ul#cssmenu a:hover,
+ul#cssmenu li:hover a,
+ul#cssmenu li.iehover a {background: #eaeaea; color:#6d6d6d}
+ul#cssmenu ul a { background:#dad8d8; padding:6px 0}
+ul#cssmenu li:hover li a, ul#cssmenu li.iehover li a {color:#6d6d6d}
+ul#cssmenu li:hover li a,
+ul#cssmenu li.iehover li a {background: none; padding:6px 0 }
+ul#cssmenu li:hover li a:hover,
+ul#cssmenu li:hover li:hover a,
+ul#cssmenu li.iehover li a:hover,
+ul#cssmenu li.iehover li.iehover a {background: none; color:#6d6d6d}
+ul#cssmenu li:hover ul,
+ul#cssmenu ul li:hover ul,
+ul#cssmenu li.iehover ul,
+ul#cssmenu ul li.iehover ul {display: none}
+.but-submenu { display:block}
+ul#cssmenu ul.box-flex-column {height: auto;}*/
+
+/*@media only screen and (max-width: 894px){
+ul#cssmenu a { padding: 14px 10px;}	
+}
+@media only screen and (max-width: 760px){
+ul#cssmenu { height:auto}
+ul#cssmenu li { width:100%; height:auto; float:none; display: block; border-bottom:#474747 solid 1px}
+ul#cssmenu li:last-child { border:none}
+ul#cssmenu a,ul#cssmenu .str a {padding: 9px 10px}
+.str-act:after, .str:after { right:6px; top:14px}
+ul#cssmenu ul { width:100%; position:relative; top:0; display:block; background:#313131; border-top:#202020 solid 1px; border-bottom:#202020 solid 1px}
+ul#cssmenu ul li {border-bottom:none}
+ul#cssmenu a:hover,
+ul#cssmenu li:hover a,
+ul#cssmenu li.iehover a {
+	background:none
+}
+}*/

@@ -1,0 +1,39 @@
+mixin svg(name)
+    svg(class="icon icon-" + name)
+        use(xlink:href="images/sprite/sprite.svg#"+name)
+html(lang='ru') 
+    head 
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon", href="images/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="css/jquery.fancybox.min.css")
+        link(rel="stylesheet", href="owl.carousel.css")
+        link(rel="stylesheet", href="owl.theme.default.css")
+        script(src="js/jquery-1.10.2.js") 
+        script(src="js/main.js")
+        script(src="js/jquery.maskedinput.min.js")
+        script 
+            include js/slider.js
+        title Заголовок title
+    body 
+        .main 
+            p. 
+                привет
+                sad
+            p sdfsdf
+            -
+                let date = new Date();
+                let arr = ['0'+date.getMonth()+1,'0'+date.getDate()].map(val => val.slice(-2))
+                let datenow = `${arr[1]}.${arr[0]}.${date.getFullYear()}`;
+            .main2(class={new:true, banned:true})
+        .content 
+            +svg('like')
+        footer 
+        #topcontrol(title='К началу страницы')
+        script(src="js/wow.min.js") 
+        script(src="js/jquery.fancybox.min.js") 
+        script 
+            include js/wow.js
+                
+                

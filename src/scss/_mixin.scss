@@ -1,0 +1,11 @@
+@mixin p0 {margin:0; padding:0;}
+@mixin font1 {font-family:$font-name1, Arial, serif}
+@mixin font2 {font-family:$font-name2, Arial, serif}
+@mixin font3 {font-family:$font-name3, Arial, serif}
+@mixin font4 {font-family:$font-name4, Arial, serif}
+@mixin anim {transition:all ease-out 0.25s;}
+@mixin animt {transform: scale(1.1);}
+@mixin before {content: ''; display: block; position: relative;}
+@mixin item($width, $padding, $bg, $border, $borradius){
+    width: $width; padding: $padding; background: $bg; border: $border; border-radius: $borradius;
+}
